@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="survey.css" />
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <main>
+        <fieldset>
+            <form id="survey-form" action="">
+                    <p id="description">Tell us about yourself and your coding experience</p>
+                <div>
+                    <div class="label-info">
+                        <label id="name-label" for="name">Name:</label>
+                    </div>
+                    <div class="user-info">
+                        <input id="name" type="text" name="name" class="input-field" required placeholder=" Your name">
+                    </div>
+                </div>
+                <div>
+                    <div class="label-info">
+                        <label id="email-label" for="email">Email:</label>
+                    </div>
+                    <div class="user-info">
+                        <input id="email" type="email" name="email" class="input-field" required placeholder=" Your email">
+                    </div>
+                </div>
+                <div>
+                    <div class="label-info">
+                        <label id="number-label" for="number">Age:</label>
+                    </div>
+                    <div class="user-info">
+                        <input id="number" type="number" name="number" min="1" max="125" class="input-field" placeholder=" Your age">
+                    </div>
+                </div>
+                <div>
+                    <div class="label-info">
+                        <label for="dropdown">Gender:</label>
+                    </div>
+                    <div class="user-info">
+                        <select name="dropdown" id="dropdown">
+                            <option disabled selected>
+                                Select a option
+                            </option>
+                            <option value="male">
+                                Male
+                            </option>
+                            <option value="female">
+                                Female
+                            </option>
+                            <option value="other">
+                                Other
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="label-info">
+                        <label for="education">Level of education:</label>
+                    </div>
+                    <div class="user-info">
+                        <ul>
+                            <li><label class="radio"><input name="education" value="highschool"  type="radio" class="radio-buttons" >Highschool</label></li>
+                            <li><label class="radio"><input name="education" value="college"  type="radio" class="radio-buttons" >College</label></li>
+                            <li><label class="radio"><input name="education" value="graduate"  type="radio" class="radio-buttons" >Graduate</label></li>                            
+                            <li><label class="radio"><input name="education" value="working"  type="radio" class="radio-buttons" >Working</label></li>                            
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="label-info">
+                        <label for="code-experience">From 1 to 5, how familiar are you with coding?</label>
+                    </div>
+                    <div class="user-info">
+                        <ul>
+                            <li><label class="radio"><input name="code-experience" value="1"  type="radio" class="radio-buttons" >1</label></li>
+                            <li><label class="radio"><input name="code-experience" value="2"  type="radio" class="radio-buttons" >2</label></li>
+                            <li><label class="radio"><input name="code-experience" value="3"  type="radio" class="radio-buttons" >3</label></li>                            
+                            <li><label class="radio"><input name="code-experience" value="4"  type="radio" class="radio-buttons" >4</label></li>
+                            <li><label class="radio"><input name="code-experience" value="5"  type="radio" class="radio-buttons" >5</label></li>                            
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="label-info">
+                        <label for="field-of-study">What are your fields of interest?</label>
+                    </div>
+                    <div class="user-info">
+                        <ul>
+                            <li><label class="checkbox"><input name="field-of-study" value="front-end"  type="checkbox" class="radio-buttons" >Front End</label></li>
+                            <li><label class="checkbox"><input name="field-of-study" value="back-end"  type="checkbox" class="radio-buttons" >Back End</label></li>
+                            <li><label class="checkbox"><input name="field-of-study" value="full-stack"  type="checkbox" class="radio-buttons" >Full Stack</label></li>                            
+                            <li><label class="checkbox"><input name="field-of-study" value="software-engineer"  type="checkbox" class="radio-buttons" >Software Engineer</label></li>
+                            <li><label class="checkbox"><input name="field-of-study" value="data-science"  type="checkbox" class="radio-buttons" >Data Science</label></li>                            
+                            <li><label class="checkbox"><input name="field-of-study" value="game-develop"  type="checkbox" class="radio-buttons" >Game Develop</label></li>                            
+                            <li><label class="checkbox"><input name="field-of-study" value="other"  type="checkbox" class="radio-buttons" >Other</label></li>                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="label-info">
+                        <label for="textarea">What is your goal of learing?</label>
+                    </div>
+                    <div class="user-info">
+                        <textarea name="textarea" id="textarea" class="input-field" placeholder="Type your answer here" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+</body>
+</html>

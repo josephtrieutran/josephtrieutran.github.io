@@ -35,7 +35,7 @@ header {
     justify-content: center;
     align-items: center;
     border: 8px solid #e5e6e8;
-    border-radius: 5px;
+    border-radius: 12px;
 }
 
 #image {
@@ -44,8 +44,7 @@ header {
 }
 
 #img-caption {
-    text-align: center;
-    vertical-align: middle;
+    margin-top: -5px;
 }
 
 #tribute-info {

@@ -39,7 +39,8 @@ header {
 }
 
 #image {
-    margin: 5px;
+    margin: 10px;
+    max-width: 100%;
 }
 
 #img-caption {
@@ -52,11 +53,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* font-size: 1.1rem; */
 }
 
 #time-line {
-    width: 60%;
+    max-width: 600px;
 }
 
 blockquote {
